@@ -1,5 +1,9 @@
-const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log("slice", a.slice(1, 4));
+console.log("Hello");
 
-const x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log("splice", x.splice(2, 5));
+const func = async (a, b) => {
+  return await a + b;
+};
+
+console.log(func(1, 1))
+
+console.log("Hello2")
