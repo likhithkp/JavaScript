@@ -1,9 +1,17 @@
-console.log("Hello");
+var isPalindrome = function(s) {
+    const filterNonAlphabet = (str) => {
+        return str.replace(/[^0-9a-zA-Z]/g, '');
+    };
 
-const func = async (a, b) => {
-  return await a + b;
+    s = s.trim();
+
+    s = filterNonAlphabet(s);
+
+    s = s.toLowerCase();
+
+    let rev_s = s.split('').reverse().join('');
+
+    return rev_s === s;
 };
 
-console.log(func(1, 1))
-
-console.log("Hello2")
+console.log(isPalindrome("race car"))
